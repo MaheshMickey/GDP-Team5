@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+
+.signupbox {
+ 	/*background-image:url("pic3.png");*/
+   width:50%;
+   height:50%;
+   background: #C6BFBE;
+   color:black;
+   box-sizing:border-box ;
+   padding:30px 10px ;
+   margin:10px auto;
+   padding:50px;
+}
+.title {
+	color:black;
+	text-align:center;
+}
+input[type="text"],input[type="email"],input[type="password"] {
+	width: 100%;
+  padding: 10px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.signupButton {
+     height: 25px;
+     background: black;
+     color: white;
+     font-size: 12px;
+     border-radius: 10px;
+     padding:5px;
+     text-align:center;
+     padding-bottom:5px;
+}
+.inputround {
+	border-radius:15px;
+	padding:1px;
+}
