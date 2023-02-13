@@ -1,0 +1,90 @@
+@charset "ISO-8859-1";
+      nav {
+        /* background-color: lightgray; */
+        background-color: #333;
+        padding: 10px 20px;
+        text-align: left;
+        display:flex;
+        justify-content:space-between;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      form {
+        width: 500px;
+        margin: auto;
+        text-align: left;
+        padding: 20px;
+      }
+      .container {
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+      }
+      .container_product_cost {
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+      }
+      label {
+        width: 120px;
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+      .container input[type="text"] {
+        width: 45%;
+        padding: 10px;
+        font-size: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        float: right;
+        margin-left: 10%;
+      }
+      .container_product_cost input[type="text"] {
+        width: 45%;
+        padding: 10px;
+        font-size: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        float: right;
+        margin-left: 10%;
+      }
+      textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      button input[type= "submit"]{
+        padding: 10px 20px;
+        /* background-color: rgb(11, 42, 52);
+        color: white; */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 10px auto;
+        color:red;
+        transition-duration:0.2s;
+      }
+      #checkInButton.enabled{
+      	background-color: green;
+      }
+      #checkInButton.disabled{
+      	background-color: red;
+      }
+      .clear {
+        clear: both;
+      }

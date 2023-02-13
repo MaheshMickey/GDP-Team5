@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Warehouse Inventory</title>
+<link rel="stylesheet" href="workerCheckIn.css">
+<meta charset="UTF-8">
+<script>
+    function checkFields() {
+      // var productid = document.getElementById("product_id").value;
+      var upc = document.getElementById("upc").value;
+      var productName = document.getElementById("product_name").value;
+      var customerName = document.getElementById("customer_name").value;
+      var qty = document.getElementById("quantity").value;
+      if (productName != "" && customerName != "" && upc != "" && qty != "") {
+        document.getElementById("checkInButton").enabled = true;
+      }
+      else {
+        document.getElementById("checkInButton").disabled = false;
+      }
+    }
+  </script>
+</head>
+
+<body>
+	<h1 style="text-align: center;">Warehouse Inventory</h1>
+	<nav>
+		<a href="workerPage.html">Inventory</a> <a href="workerCheckIN.html">Check
+			In</a> <a href="#">Requests</a> <a href="#">History</a>
+	</nav>
+	<form action="workerHome" method="post">
+		<div class="container" id="container1">
+			<label for="upc">UPC:</label> <input type="text" name="upc" id="upc"
+				oninput="checkFields()"><br>
+			<br>
+			<br> <label for="product_name">Product Name:</label> <input
+				type="text" name="product_name" id="product_name"
+				oninput="checkFields()"><br>
+			<br>
+			<br> <label for="customer_name">Owner Name:</label> <input
+				type="text" name="customer_name" id="customer_name"
+				oninput="checkFields()">
+			<div class="clear"></div>
+		</div>
+		<div class="container_product_cost">
+			<label for="quantity">Quantity:</label> <input type="text"
+				name="quantity" id="quantity" oninput="checkFields()"><br>
+			<div class="clear"></div>
+		</div>
+		<label for="description">Description:</label>
+		<textarea name="description" id="description" oninput="checkFields()"></textarea>
+		<button id="checkInButton" type="submit">Check In</button>
+	</form>
+</body>
+
+</html>
