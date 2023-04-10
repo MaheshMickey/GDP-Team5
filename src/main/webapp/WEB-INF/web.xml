@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	<display-name>InventoryApplication</display-name>
+	
+	<welcome-file-list>
+		<welcome-file>/views/html/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>controllers.UserController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/user/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OrderController</servlet-name>
+		<servlet-class>controllers.OrderController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>OrderController</servlet-name>
+		<url-pattern>/orders/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DashboardController</servlet-name>
+		<servlet-class>controllers.DashboardController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DashboardController</servlet-name>
+		<url-pattern>/dashboard/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MessageController</servlet-name>
+		<servlet-class>controllers.MessageController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MessageController</servlet-name>
+		<url-pattern>/messages/*</url-pattern>
+	</servlet-mapping>
+</web-app>

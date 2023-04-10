@@ -1,0 +1,62 @@
+body {
+	font-family: arial, sans-serif;
+}
+
+.container form {
+	background-color: lightgray;
+	width: 500px;
+	margin: auto;
+	text-align: left;
+	padding: 20px;
+}
+
+.main-heading {
+	text-align: center;
+	margin: 30px 0;
+}
+
+label {
+	width: 120px;
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.container input[type="text"] {
+	width: 45%;
+	padding: 10px;
+	font-size: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	float: right;
+	margin-left: 10%;
+}
+
+textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+button input[type="submit"] {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto;
+	color: red;
+	transition-duration: 0.2s;
+}
+
+#checkInButton.enabled {
+	background-color: green;
+}
+
+#checkInButton.disabled {
+	background-color: red;
+}
